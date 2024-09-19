@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 body {
@@ -194,6 +194,14 @@ header {
 
 .home-links button:hover {
   background-color: #0f1655;
+}
+
+.about-me-description {
+  margin-bottom: 36px;
+}
+
+.about-me-description h2 {
+  margin-bottom: 24px;
 }
 
 .tech-skills {
