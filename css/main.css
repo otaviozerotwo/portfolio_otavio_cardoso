@@ -204,6 +204,22 @@ header {
   margin-bottom: 24px;
 }
 
+.about-me-description p {
+  margin-bottom: 36px;
+}
+
+.about-me-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.about-me-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .tech-skills {
   display: flex;
   flex-wrap: wrap;
