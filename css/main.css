@@ -125,7 +125,7 @@ header {
   display: flex;
 }
 
-/* FIM HEADER */
+/* INICIO SECTION #home */
 
 .content {
   padding: 20px;
@@ -195,6 +195,8 @@ header {
 .home-links button:hover {
   background-color: #0f1655;
 }
+
+/* INICIO SECTION #aboutMe */
 
 .about-me-description {
   margin-bottom: 36px;
