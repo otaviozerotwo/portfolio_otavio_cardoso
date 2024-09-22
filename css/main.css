@@ -217,17 +217,17 @@ header {
 }
 
 .about-me-img img {
-  width: 300px;
-  height: 300px;
+  width: 264px;
+  height: 264px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .tech-skills {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 31.3%);
+  column-gap: 3%;
+  row-gap: 4%;
   margin-bottom: 36px;
 }
 
@@ -237,7 +237,6 @@ header {
   align-items: center;
   justify-content: center;
   height: 100px;
-  width: calc(33.33% - 10px);
   border-radius: 8px;
   background-color: #0f1655;
   gap: 8px;
