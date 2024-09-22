@@ -186,7 +186,7 @@ header {
   width: 100%;
   color: #E4ECFF;
   background-color: #080e41;
-  border: none;
+  border: 1px solid #171f67;
   border-radius: 8px;
   padding: 8px 10px;
   cursor: pointer;
@@ -198,15 +198,17 @@ header {
 
 /* INICIO SECTION #aboutMe */
 
-.about-me-description {
+#aboutMe {
   margin-bottom: 36px;
 }
 
-.about-me-description h2 {
+#aboutMe h2,
+#techSkills h2,
+#projects h2 {
   margin-bottom: 24px;
 }
 
-.about-me-description p {
+#aboutMe p {
   margin-bottom: 36px;
 }
 
@@ -221,7 +223,7 @@ header {
   height: 264px;
   border-radius: 50%;
   object-fit: cover;
-}
+} 
 
 .tech-skills {
   display: grid;
@@ -237,6 +239,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 100px;
+  border: 1px solid #171f67;
   border-radius: 8px;
   background-color: #0f1655;
   gap: 8px;
