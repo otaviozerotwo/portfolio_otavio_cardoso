@@ -125,6 +125,10 @@ header {
   display: flex;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* INICIO SECTION #home */
 
 .content {
@@ -152,9 +156,8 @@ header {
   margin-bottom: 36px;
 }
 
-.home-subtitle span {
+.home-subtitle p {
   font-size: 16px;
-  color: #E4ECFF;
 }
 
 .home-description {
@@ -162,9 +165,9 @@ header {
 }
 
 .home-links {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 46%);
+  row-gap: 8px;
   margin-bottom: 36px;
 }
 
@@ -176,13 +179,13 @@ header {
 
 .home-links a {
   text-decoration: none;
-  width: 100px;
-  margin-right: 8px;
+  width: 90%;
 }
 
 .home-links button {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   color: #E4ECFF;
   background-color: #080e41;
@@ -204,7 +207,9 @@ header {
 
 #aboutMe h2,
 #techSkills h2,
-#projects h2 {
+#projects h2,
+#contacts h2 {
+  font-size: 1.3em;
   margin-bottom: 24px;
 }
 
@@ -250,7 +255,41 @@ header {
   height: 50px;
 }
 
-@media (min-width: 768px) {
+.projects {
+  display: block;
+  margin-bottom: 36px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  background-color: #0f1655;
+  border: 1px solid #171f67;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.project h3,
+.project p {
+  padding: 0 5%;
+}
+
+.project img,
+.project h3 {
+  margin-bottom: 8px;
+}
+
+.project h3 {
+  align-self: self-start;
+}
+
+.project img {
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
   html {
     font-size: 16px;
   }
