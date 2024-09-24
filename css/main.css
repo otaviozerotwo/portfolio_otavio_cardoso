@@ -181,7 +181,6 @@ header {
 .home-links button {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   color: #E4ECFF;
   background-color: #080e41;
@@ -283,6 +282,32 @@ header {
 
 .project img {
   width: 90%;
+}
+
+.contacts a {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  background-color: transparent;
+  border: none;
+  color: #E4ECFF;
+  font-size: 1em;
+  font-weight: bold;
+  gap: 12px;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.contacts a img {
+  height: 44px;
+  width: 44px;
+}
+
+footer > .navbar {
+  border-bottom: none;
+  border-top: 0.5px solid rgb(30, 32, 41);
+  justify-content: center;
+  font-size: 0.8em;
 }
 
 @media screen and (min-width: 768px) {
