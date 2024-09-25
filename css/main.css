@@ -179,8 +179,9 @@ header {
 }
 
 .home-links button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   color: #E4ECFF;
   background-color: #080e41;
@@ -312,7 +313,11 @@ footer > .navbar {
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 5.5em !important;
   }
 
   .container {
@@ -332,6 +337,35 @@ footer > .navbar {
   .hamburger,
   .close {
     display: none;
+  }
+
+  .home-subtitle {
+    display: flex;
+    gap: 24px;
+  }
+
+  .home-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 54px;
+  }
+
+  .home-links a {
+    width: 124px;
+  }
+  
+  .home-links a button {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .about-me {
+    display: flex;
+  }
+
+  .about-me p {
+    width: 60%;
   }
 
   .tech-skills {
