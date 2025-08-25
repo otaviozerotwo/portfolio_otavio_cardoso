@@ -10,7 +10,7 @@ export function Home() {
       <Navbar />
 
       <main className="flex-1">
-        <section id="hero" className="pt-20">
+        <section id="hero" className="pt-12">
           <Hero />
         </section>
 

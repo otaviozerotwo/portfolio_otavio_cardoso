@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { Container } from "./Container";
+import { CarouselHero } from "./CarouselHero";
 
 export function Hero() {
   return (
@@ -19,9 +20,11 @@ export function Hero() {
             Desenvolvedor de Software
           </p>
 
-          <p className="text-lg text-muted-foreground mb-10">
-            Disponível para colaborações e projetos freelance
+          <p className="text-lg text-muted-foreground mb-4">
+            Disponível para colaborações e projetos freelance com tecnologias como:
           </p>
+
+          <CarouselHero />
 
           <div className="flex gap-4 mb-8">
             <Button variant="default">
