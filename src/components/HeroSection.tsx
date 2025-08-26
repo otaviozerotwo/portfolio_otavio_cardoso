@@ -5,7 +5,7 @@ import { LogoMarquee } from "./LogoMarquee";
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen py-20 bg-background text-foreground">
+    <div className="min-h-screen py-20 bg-background text-foreground">
       <Container>
         <div className="flex flex-col items-start">
           <p className="text-3xl font-medium mb-2">
@@ -54,6 +54,6 @@ export function HeroSection() {
           </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 }
