@@ -1,6 +1,6 @@
 import { Container } from "./Container";
 
-export function Contact() {
+export function ContactSection() {
   return (
     <section>
       <Container>

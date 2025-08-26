@@ -1,6 +1,6 @@
 import { Container } from "./Container";
 
-export function Projects() {
+export function ProjectSection() {
   return (
     <section>
       <Container>

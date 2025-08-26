@@ -1,8 +1,8 @@
-import { About } from "@/components/About";
-import { Contact } from "@/components/Contact";
-import { Hero } from "@/components/Hero";
+import { AboutSection } from "@/components/AboutSection";
+import { ContactSection} from "@/components/ContactSection";
+import { HeroSection} from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
-import { Projects } from "@/components/Projects";
+import { ProjectSection} from "@/components/ProjectSection";
 
 export function Home() {
   return (
@@ -11,19 +11,19 @@ export function Home() {
 
       <main className="flex-1">
         <section id="hero" className="pt-12">
-          <Hero />
+          <HeroSection/>
         </section>
 
         <section id="about" className="py-20">
-          <About />
+          <AboutSection />
         </section>
 
         <section id="projects" className="py-20 bg-muted">
-          <Projects />
+          <ProjectSection/>
         </section>
 
         <section id="contact" className="py-20">
-          <Contact />
+          <ContactSection/>
         </section>
       </main>
     </div>
