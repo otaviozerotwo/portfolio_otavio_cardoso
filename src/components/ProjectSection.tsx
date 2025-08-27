@@ -1,5 +1,5 @@
 import { Container } from "./Container";
-import { Badge } from "./ui/badge";
+import { ProjectTags } from "./ProjectTags";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -59,13 +59,7 @@ export function ProjectSection() {
                 </p>
               </div>
 
-              <div className="flex gap-2">
-                {project.tags.map((tag, i) => (
-                  <Badge key={i} variant="secondary">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
+              <ProjectTags tags={project.tags} />
             </CardContent>
 
             <CardFooter className="flex gap-4 px-4">
