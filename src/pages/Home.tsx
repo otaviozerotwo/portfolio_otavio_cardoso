@@ -14,15 +14,15 @@ export function Home() {
           <HeroSection/>
         </section>
 
-        <section id="about" className="py-20">
+        <section id="about" className="py-20 bg-muted">
           <AboutSection />
         </section>
 
-        <section id="projects" className="py-20 bg-muted">
+        <section id="projects" className="py-20">
           <ProjectSection/>
         </section>
 
-        <section id="contact" className="py-20">
+        <section id="contact" className="py-20 bg-muted">
           <ContactSection/>
         </section>
       </main>
