@@ -7,7 +7,7 @@ import AboutPicture from "../assets/img-sobre-mim.jpeg"
 export function AboutSection() {
   return (
     <Container>
-      <div className="grid grid-cold-1 md:grid-cols-2 gap-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-center">
           <img 
             src={AboutPicture}

@@ -7,7 +7,7 @@ import { ExternalLink, Github } from "lucide-react";
 export function ProjectSection() {
   const projects = [
     {
-      title: "Algoritmo A Star Legend of Zelda",
+      title: "Algoritmo A Star Zelda",
       description: "Aplicação do algoritmo A Star com elementos do jogo The Legend of Zelda",
       image: "https://placehold.co/600x400",
       tags: ["JavaScript", "React"],
@@ -23,8 +23,8 @@ export function ProjectSection() {
       code: "https://github.com/otaviozerotwo/tic_tac_toe_special_js_vanilla",
     },
     {
-      title: "Pokedex",
-      description: "Pokedex para dispositivos Android",
+      title: "Pokedéx",
+      description: "Pokedéx para dispositivos Android",
       image: "https://placehold.co/600x400",
       tags: ["Kotlin", "API"],
       demo: "#",
