@@ -2,6 +2,7 @@ import { Container } from "./Container";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter } from "./ui/card";
+import { ExternalLink, Github } from "lucide-react";
 
 export function ProjectSection() {
   const projects = [
@@ -34,14 +35,14 @@ export function ProjectSection() {
     <Container>
       <div className="text-center">
         <h2 className="text-3xl font-bold mb-4">Projetos em Destaque</h2>
-        <p className="text-muted-foreground mb-4">
+        <p className="text-muted-foreground mb-10">
           Uma coleção de projetos que mostram minhas habilidades e experiência
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
-          <Card key={index} className="flex flex-col overflow-hidden">
+          <Card key={index} className="w-80 flex flex-col overflow-hidden gap-0">
             <img 
               src={project.image} 
               alt={project.title}
@@ -58,7 +59,7 @@ export function ProjectSection() {
                 </p>
               </div>
 
-              <div className="flex gap-2 mb-1">
+              <div className="flex gap-2">
                 {project.tags.map((tag, i) => (
                   <Badge key={i} variant="secondary">
                     {tag}
@@ -67,14 +68,24 @@ export function ProjectSection() {
               </div>
             </CardContent>
 
-            <CardFooter className="flex gap-4">
-              <Button asChild variant="link" className="p-0 text-blue-500">
-                <a href={project.demo} target="_blank" rel="noreferrer">
+            <CardFooter className="flex gap-4 px-4">
+              <Button asChild variant="outline" className="p-0 text-blue-500">
+                <a 
+                  href={project.demo} 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
+                  <ExternalLink />
                   Live Demo
                 </a>
               </Button>
-              <Button asChild variant="link" className="p-0 text-blue-500">
-                <a href={project.code} target="_blank" rel="noreferrer">
+              <Button asChild variant="outline" className="p-0">
+                <a 
+                  href={project.code} 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
+                  <Github /> 
                   Code
                 </a>
               </Button>
