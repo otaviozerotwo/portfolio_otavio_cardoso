@@ -1,4 +1,4 @@
-import { ageCalculator } from "@/utils/ageCalculator";
+import { ageCalculator } from "@/lib/validations/ageCalculator";
 import { Container } from "../components/container";
 import { Card, CardContent } from "../components/ui/card";
 

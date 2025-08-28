@@ -35,7 +35,7 @@ export function ContactSection() {
         <div className="space-y-6">
           <div className="flex items-center gap-4">
             <a href="mailto:otavio.zerotwo@gmail.com" target="_blank" rel="noreferrer">
-              <div className="bg-primary text-white p-3 rounded-lg">
+              <div className="bg-primary text-white p-3 rounded-lg dark:text-black">
                 <Mail className="w-5 h-5" />
               </div>
             </a>
@@ -47,7 +47,7 @@ export function ContactSection() {
 
           <div className="flex items-center gap-4">
             <a href="https://www.linkedin.com/in/otaviozerotwo/" target="_blank" rel="noreferrer">
-              <div className="bg-primary text-white p-3 rounded-lg">
+              <div className="bg-primary text-white p-3 rounded-lg dark:text-black">
                   <Linkedin className="w-5 h-5" />
               </div>
             </a>
@@ -58,7 +58,7 @@ export function ContactSection() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="bg-primary text-white p-3 rounded-lg">
+            <div className="bg-primary text-white p-3 rounded-lg dark:text-black">
               <MapPin className="w-5 h-5" />
             </div>
             <div>

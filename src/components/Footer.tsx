@@ -29,7 +29,7 @@ export function Footer() {
             </a>
           </div>
 
-          <div className="text-sm text-gray-500 text-center md:text-right">
+          <div className="text-sm text-gray-500 text-center md:text-right dark:text-gray-50">
             &copy; 2025 Otávio Cardoso. Todos os direitos reservados.
           </div>
         </div>
