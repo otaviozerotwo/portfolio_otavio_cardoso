@@ -1,9 +1,9 @@
-import { AboutSection } from "@/components/AboutSection";
-import { ContactSection} from "@/components/ContactSection";
-import { Footer } from "@/components/Footer";
-import { HeroSection} from "@/components/HeroSection";
-import { Navbar } from "@/components/Navbar";
-import { ProjectSection} from "@/components/ProjectSection";
+import { AboutSection } from "@/sections/About";
+import { ContactSection} from "@/sections/Contact";
+import { Footer } from "@/components/footer";
+import { HeroSection} from "@/sections/Hero";
+import { Navbar } from "@/components/navbar";
+import { ProjectSection} from "@/sections/Project";
 
 export function Home() {
   return (

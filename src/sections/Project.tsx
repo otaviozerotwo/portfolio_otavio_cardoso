@@ -1,7 +1,7 @@
-import { Container } from "./Container";
-import { ProjectTags } from "./ProjectTags";
-import { Button } from "./ui/button";
-import { Card, CardContent, CardFooter } from "./ui/card";
+import { Container } from "../components/container";
+import { ProjectTags } from "../components/project-tag";
+import { Button } from "../components/ui/button";
+import { Card, CardContent, CardFooter } from "../components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 
 export function ProjectSection() {

@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "./ui/button";
-import { Container } from "./Container";
-import { LogoMarquee } from "./LogoMarquee";
+import { Button } from "../components/ui/button";
+import { Container } from "../components/container";
+import { LogoMarquee } from "../components/logo-marquee";
 
 export function HeroSection() {
   return (

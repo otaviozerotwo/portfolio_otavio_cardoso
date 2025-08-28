@@ -1,12 +1,12 @@
 import { Linkedin, Mail, MapPin } from "lucide-react";
-import { Container } from "./Container";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
+import { Container } from "../components/container";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Button } from "../components/ui/button";
 import { useForm } from "react-hook-form";
-import { contactFormSchema, type ContactFormValues } from "@/schemas/contactFormSchema";
+import { contactFormSchema, type ContactFormValues } from "@/lib/validations/contactFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
+import { Form, FormControl, FormField, FormItem, FormMessage } from "../components/ui/form";
 
 export function ContactSection() {
   const form = useForm<ContactFormValues>({

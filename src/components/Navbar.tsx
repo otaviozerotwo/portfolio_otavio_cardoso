@@ -1,5 +1,6 @@
-import { Moon, Terminal } from "lucide-react"
-import { Container } from "./Container";
+import { Terminal } from "lucide-react"
+import { Container } from "./container";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Navbar() {
   return (
@@ -13,9 +14,7 @@ export function Navbar() {
           <li><a href="#projects" className="hover:text-gray-600 transition-colors">Projetos</a></li>
           <li><a href="#contact" className="hover:text-gray-600 transition-colors">Contato</a></li>
         </ul>
-        <span className="bg-gray-500 p-2 rounded-full cursor-pointer">
-          <Moon />
-        </span>
+        <ThemeToggle />
       </Container>
     </nav>
   );

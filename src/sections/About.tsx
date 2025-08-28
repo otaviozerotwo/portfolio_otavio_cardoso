@@ -1,6 +1,6 @@
 import { ageCalculator } from "@/utils/ageCalculator";
-import { Container } from "./Container";
-import { Card, CardContent } from "./ui/card";
+import { Container } from "../components/container";
+import { Card, CardContent } from "../components/ui/card";
 
 import AboutPicture from "../assets/img-sobre-mim.jpeg"
 

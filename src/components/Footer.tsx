@@ -1,5 +1,5 @@
 import { Github, Linkedin, Terminal } from "lucide-react";
-import { Container } from "./Container";
+import { Container } from "./container";
 
 export function Footer() {
   return (
