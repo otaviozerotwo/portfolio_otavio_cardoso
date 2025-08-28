@@ -28,7 +28,7 @@ export function HeroSection() {
 
           <div className="flex gap-4 mb-8">
             <Button variant="default">
-              <a href="#">Entre em contato</a>
+              <a href="#contact">Entre em contato</a>
             </Button>
             <Button variant="default">
               <a href="#projects">Ver Projetos</a>
