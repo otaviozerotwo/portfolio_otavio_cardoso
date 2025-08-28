@@ -4,7 +4,7 @@ import { Card, CardContent } from "../components/ui/card";
 
 import AboutPicture from "../assets/img-sobre-mim.jpeg"
 
-export function AboutSection() {
+export function About() {
   return (
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">

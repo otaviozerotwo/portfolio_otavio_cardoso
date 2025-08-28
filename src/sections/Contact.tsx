@@ -8,7 +8,7 @@ import { contactFormSchema, type ContactFormValues } from "@/lib/validations/con
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "../components/ui/form";
 
-export function ContactSection() {
+export function Contact() {
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {

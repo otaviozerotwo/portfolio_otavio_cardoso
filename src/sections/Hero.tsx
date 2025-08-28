@@ -3,7 +3,7 @@ import { Button } from "../components/ui/button";
 import { Container } from "../components/container";
 import { LogoMarquee } from "../components/logo-marquee";
 
-export function HeroSection() {
+export function Hero() {
   return (
     <div className="min-h-screen py-20 bg-background text-foreground">
       <Container>

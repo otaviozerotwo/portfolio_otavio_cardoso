@@ -4,7 +4,7 @@ import { Button } from "../components/ui/button";
 import { Card, CardContent, CardFooter } from "../components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 
-export function ProjectSection() {
+export function Project() {
   const projects = [
     {
       title: "Algoritmo A Star Zelda",
