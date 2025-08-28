@@ -1,10 +1,27 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Linkedin, Mail, MapPin } from "lucide-react";
 import { Container } from "./Container";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import { useForm } from "react-hook-form";
+import { contactFormSchema, type ContactFormValues } from "@/schemas/contactFormSchema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 
 export function ContactSection() {
+  const form = useForm<ContactFormValues>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  })
+
+  function onSubmit(values: ContactFormValues) {
+    console.log("Form enviado", values);
+  }
+
   return (
     <Container className="max-w-5xl">
       <div className="text-center mb-12">
@@ -17,9 +34,11 @@ export function ContactSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="space-y-6">
           <div className="flex items-center gap-4">
-            <div className="bg-primary text-white p-3 rounded-lg">
-              <Mail className="w-5 h-5" />
-            </div>
+            <a href="mailto:otavio.zerotwo@gmail.com" target="_blank" rel="noreferrer">
+              <div className="bg-primary text-white p-3 rounded-lg">
+                <Mail className="w-5 h-5" />
+              </div>
+            </a>
             <div>
               <h4 className="font-semibold">Email</h4>
               <p className="text-muted-foreground">otavio.zerotwo@gmail.com</p>
@@ -27,12 +46,14 @@ export function ContactSection() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="bg-primary text-white p-3 rounded-lg">
-              <Phone className="w-5 h-5" />
-            </div>
+            <a href="https://www.linkedin.com/in/otaviozerotwo/" target="_blank" rel="noreferrer">
+              <div className="bg-primary text-white p-3 rounded-lg">
+                  <Linkedin className="w-5 h-5" />
+              </div>
+            </a>
             <div>
-              <h4 className="font-semibold">Telefone</h4>
-              <p className="text-muted-foreground">+55 (34) 99222-7305</p>
+              <h4 className="font-semibold">LinkedIn</h4>
+              <p className="text-muted-foreground">otaviozerotwo</p>
             </div>
           </div>
 
@@ -47,12 +68,53 @@ export function ContactSection() {
           </div>
         </div>
 
-        <form className="space-y-4">
-          <Input placeholder="Seu nome" />
-          <Input type="email" placeholder="Seu email" />
-          <Textarea placeholder="Sua mensagem" rows={10} className="resize-none"/>
-          <Button className="w-full cursor-pointer">Enviar</Button>
-        </form>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input placeholder="Seu nome" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input placeholder="Seu e-mail" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="message"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Textarea 
+                      placeholder="Sua mensagem..." 
+                      className="resize-none h-32" 
+                      {...field} 
+                    />
+                  </FormControl>
+                </FormItem>
+              )}
+            />
+
+            <Button type="submit" className="w-full h-10 cursor-pointer">Enviar mensagem</Button>
+          </form>
+        </Form>
       </div>
     </Container>
   );  
