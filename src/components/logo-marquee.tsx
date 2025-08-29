@@ -13,7 +13,7 @@ export function LogoMarquee() {
     <Marquee 
       gradient={false} 
       speed={40}
-      className="mb-10 w-full max-w-5xl"
+      className="mb-10 w-full max-w-lvw md:max-w-5xl"
     >
       <Card className="w-24 h-24 flex-shrink-0 mx-2">
         <CardContent className="flex flex-col items-center justify-center h-full">
