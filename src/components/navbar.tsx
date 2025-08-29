@@ -50,29 +50,29 @@ export function Navbar() {
             <SheetContent side="right" className="w-64">
               <nav className="flex flex-col gap-6 mt-14 text-lg font-medium border-t-2">
                 <ul>
-                  <li className="px-8 py-2 hover:bg-secondary">
+                  <li>
                     <a 
                       href="#about"
                       onClick={() => setOpen(false)}
-                      className="dark:text-gray-200 transition-colors"
+                      className="dark:text-gray-200 transition-colors hover:bg-secondary px-8 py-2 block"
                     >
                       Sobre mim
                     </a>
                   </li>
-                  <li className="px-8 py-2 hover:bg-secondary">
+                  <li>
                     <a 
                       href="#projects"
                       onClick={() => setOpen(false)}
-                      className="dark:text-gray-200 transition-colors"
+                      className="dark:text-gray-200 transition-colors hover:bg-secondary px-8 py-2 block"
                     >
                       Projetos
                     </a>
                   </li>
-                  <li className="px-8 py-2 hover:bg-secondary">
+                  <li>
                     <a 
                       href="#contact"
                       onClick={() => setOpen(false)}
-                      className="dark:text-gray-200 transition-colors"
+                      className="dark:text-gray-200 transition-colors hover:bg-secondary px-8 py-2 block"
                     >
                       Contato
                     </a>
