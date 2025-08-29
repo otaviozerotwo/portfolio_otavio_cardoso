@@ -13,8 +13,44 @@ export function LogoMarquee() {
     <Marquee 
       gradient={false} 
       speed={40}
-      className="mb-10 w-full max-w-xl"
+      className="mb-10 w-full max-w-5xl"
     >
+      <Card className="w-24 h-24 flex-shrink-0 mx-2">
+        <CardContent className="flex flex-col items-center justify-center h-full">
+          <img src={JsLogo} alt="Logo JavaScript" className="h-10 w-10 object-contain" />
+          <p>JavaScript</p>
+        </CardContent>
+      </Card>
+      <Card className="w-24 h-24 flex-shrink-0 mx-2">
+        <CardContent className="flex flex-col items-center justify-center h-full">
+          <img src={ReactLogo} alt="Logo React" className="h-10 w-10 object-contain" />
+          <p>React</p>
+        </CardContent>
+      </Card>
+      <Card className="w-24 h-24 flex-shrink-0 mx-2">
+        <CardContent className="flex flex-col items-center justify-center h-full">
+          <img src={TsLogo} alt="Logo TypeScript" className="h-10 w-10 object-contain" />
+          <p>TypeScript</p>
+        </CardContent>
+      </Card>
+      <Card className="w-24 h-24 flex-shrink-0 mx-2">
+        <CardContent className="flex flex-col items-center justify-center h-full">
+          <img src={NodeLogo} alt="Logo Node.js" className="h-10 w-10 object-contain" />
+          <p>Node.js</p>
+        </CardContent>
+      </Card>
+      <Card className="w-24 h-24 flex-shrink-0 mx-2">
+        <CardContent className="flex flex-col items-center justify-center h-full">
+          <img src={DockerLogo} alt="Logo Docker" className="h-10 w-10 object-contain" />
+          <p>Docker</p>
+        </CardContent>
+      </Card>
+      <Card className="w-24 h-24 flex-shrink-0 mx-2">
+        <CardContent className="flex flex-col items-center justify-center h-full">
+          <img src={TypeORMLogo} alt="Logo TypeORM" className="h-10 w-10 object-contain" />
+          <p>TypeORM</p>
+        </CardContent>
+      </Card>
       <Card className="w-24 h-24 flex-shrink-0 mx-2">
         <CardContent className="flex flex-col items-center justify-center h-full">
           <img src={JsLogo} alt="Logo JavaScript" className="h-10 w-10 object-contain" />
