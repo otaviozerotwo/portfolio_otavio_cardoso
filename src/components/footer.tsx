@@ -12,22 +12,22 @@ export function Footer() {
 
           <div className="flex space-x-6">
             <ul className="flex gap-2">
-              <li className="p-3 bg-secondary rounded cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700">
+              <li>
                 <a 
                   href="https://github.com/otaviozerotwo"
                   target="_blank"
                   rel="noreferrer"
-                  className="transition-colors"
+                  className="p-3 bg-secondary rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors block"
                 >
                   <Github className="w-5 h-5" />
                 </a>
               </li>
-              <li className="p-3 bg-secondary rounded cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700">
+              <li>
                 <a 
                   href="https://www.linkedin.com/in/otaviozerotwo/"
                   target="_blank"
                   rel="noreferrer"
-                  className="transition-colors"
+                  className="p-3 bg-secondary rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors block"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>

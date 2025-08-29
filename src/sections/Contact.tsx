@@ -1,5 +1,5 @@
 import { Linkedin, Mail, MapPin } from "lucide-react";
-import { Container } from "../components/container";
+import { Container } from "../components/Container";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
 import { Button } from "../components/ui/button";

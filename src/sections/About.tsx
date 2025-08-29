@@ -1,7 +1,6 @@
 import { ageCalculator } from "@/lib/validations/ageCalculator";
-import { Container } from "../components/container";
+import { Container } from "@/components/container";
 import { Card, CardContent } from "../components/ui/card";
-
 import AboutPicture from "../assets/img-sobre-mim.jpeg"
 import { Reveal } from "@/components/reveal";
 
