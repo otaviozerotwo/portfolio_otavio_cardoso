@@ -11,7 +11,7 @@ export function Footer() {
           </div>
 
           <div className="flex space-x-6">
-            <ul className="flex gap-6">
+            <ul className="flex gap-2">
               <li className="p-3 bg-secondary rounded cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700">
                 <a 
                   href="https://github.com/otaviozerotwo"
