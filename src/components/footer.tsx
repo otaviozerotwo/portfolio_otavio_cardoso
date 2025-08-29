@@ -1,4 +1,4 @@
-import { Github, Linkedin, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, Terminal } from "lucide-react";
 import { Container } from "./container";
 
 export function Footer() {
@@ -30,6 +30,16 @@ export function Footer() {
                   className="p-3 bg-secondary rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors block"
                 >
                   <Linkedin className="w-5 h-5" />
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:otavio.zerotwo@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="p-3 bg-secondary rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors block"
+                >
+                  <Mail className="w-5 h-5" />
                 </a>
               </li>
             </ul>
