@@ -27,7 +27,7 @@ export function Contact() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Entre em contato</h2>
         <p className="text-muted-foreground">
-          Vamos discutir seu próximo projeto ou apenas dizer um oi!
+          Vamos discutir seu próximo projeto ou apenas trocar uma ideia!
         </p>
       </div>
 

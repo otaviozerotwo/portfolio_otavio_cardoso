@@ -10,7 +10,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="cursor-pointer"
+      className="cursor-pointer bg-secondary hover:bg-gray-200 dark:hover:bg-gray-700"
     >
       {theme === "light" ? (
         <Moon className="w-5 h-5" />

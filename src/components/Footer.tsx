@@ -11,25 +11,31 @@ export function Footer() {
           </div>
 
           <div className="flex space-x-6">
-            <a 
-              href="https://github.com/otaviozerotwo"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-gray-600 transition-colors"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/otaviozerotwo/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-gray-600 transition-colors"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
+            <ul className="flex gap-6">
+              <li className="p-3 bg-secondary rounded cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700">
+                <a 
+                  href="https://github.com/otaviozerotwo"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+              </li>
+              <li className="p-3 bg-secondary rounded cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700">
+                <a 
+                  href="https://www.linkedin.com/in/otaviozerotwo/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div className="text-sm text-gray-500 text-center md:text-right dark:text-gray-50">
+          <div className="text-sm text-gray-500 text-center md:text-right dark:text-gray-60">
             &copy; 2025 Otávio Cardoso. Todos os direitos reservados.
           </div>
         </div>

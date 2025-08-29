@@ -10,9 +10,30 @@ export function Navbar() {
           <Terminal size={32}/>
         </a>
         <ul className="flex gap-8 text-sm font-medium">
-          <li><a href="#about" className="hover:text-gray-600 transition-colors">Sobre min</a></li>
-          <li><a href="#projects" className="hover:text-gray-600 transition-colors">Projetos</a></li>
-          <li><a href="#contact" className="hover:text-gray-600 transition-colors">Contato</a></li>
+          <li className="p-3 hover:bg-secondary rounded cursor-pointer">
+            <a 
+              href="#about" 
+              className="transition-colors"
+            >
+              Sobre min
+            </a>
+          </li>
+          <li className="p-3 hover:bg-secondary rounded cursor-pointer">
+            <a 
+              href="#projects" 
+              className="transition-colors"
+            >
+              Projetos
+            </a>
+          </li>
+          <li className="p-3 hover:bg-secondary rounded cursor-pointer">
+            <a 
+              href="#contact" 
+              className="transition-colors"
+            >
+              Contato
+            </a>
+          </li>
         </ul>
         <ThemeToggle />
       </Container>
