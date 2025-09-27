@@ -76,7 +76,7 @@ export function Project() {
                     rel="noreferrer"
                   >
                     <ExternalLink />
-                    Live Demo
+                    Ver projeto
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="p-0">
@@ -86,7 +86,7 @@ export function Project() {
                     rel="noreferrer"
                   >
                     <Github /> 
-                    Code
+                    Código
                   </a>
                 </Button>
               </CardFooter>
