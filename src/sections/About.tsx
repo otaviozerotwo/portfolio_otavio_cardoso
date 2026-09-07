@@ -1,7 +1,7 @@
 import { ageCalculator } from "@/lib/validations/ageCalculator";
 import { Container } from "@/components/container";
 import { Card, CardContent } from "../components/ui/card";
-import AboutPicture from "../assets/img-sobre-mim.jpeg"
+import AboutPicture from "../assets/img-sobre-mim.png"
 import { Reveal } from "@/components/reveal";
 
 export function About() {
@@ -40,7 +40,7 @@ export function About() {
                 <Card>
                   <Reveal delay={0.2}>
                     <CardContent className="flex flex-col items-center justify-center p-4">
-                      <span className="text-2xl font-bold">0</span>
+                      <span className="text-2xl font-bold">4</span>
                       <span className="text-sm text-muted-foreground">Projetos</span>
                     </CardContent>
                   </Reveal>

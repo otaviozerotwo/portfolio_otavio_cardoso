@@ -5,31 +5,44 @@ import { Button } from "../components/ui/button";
 import { Card, CardContent, CardFooter } from "../components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 
+import imgEfood from '../../screenshots/efood.png';
+import imgCriptAritmetica from '../../screenshots/calculadora_criptoaritmetica.png'
+import imgZelda from '../../screenshots/zelda.png';
+import imgTicTacToe from '../../screenshots/tic_tac_toe.png';
+
 export function Project() {
   const projects = [
     {
-      title: "Algoritmo A Star Zelda",
-      description: "Aplicação do algoritmo A Star com elementos do jogo The Legend of Zelda",
-      image: "https://placehold.co/600x400",
-      tags: ["JavaScript", "React"],
-      demo: "#",
-      code: "https://github.com/otaviozerotwo/legend_of_zelda_a_star_react",
+      title: "eFood",
+      description: "Interface web de delivery para um estabelecimento gastronômico",
+      image: imgEfood,
+      tags: ["React.js", "TypeScript", "Node.js", "Redux", "Styled Components"],
+      demo: "https://efood-phi-sooty.vercel.app/",
+      code: "https://github.com/otaviozerotwo/efood",
     },
     {
       title: "Tic Tac Toe Special",
-      description: "Aplicação dos algoritmos Alphabeta Minimax no jogo Tic Tac Toe (jogo da velha)",
-      image: "https://placehold.co/600x400",
+      description: "Um jogo da velha avançado e interativo que permite ao jogador enfrentar uma inteligência artificial configurável",
+      image: imgTicTacToe,
       tags: ["JavaScript", "HTML", "CSS"],
-      demo: "#",
-      code: "https://github.com/otaviozerotwo/tic_tac_toe_special_js_vanilla",
+      demo: "https://tic-tac-toe-special-sigma.vercel.app/",
+      code: "https://github.com/otaviozerotwo/tic_tac_toe_special",
     },
     {
-      title: "Pokedéx",
-      description: "Pokedéx para dispositivos Android",
-      image: "https://placehold.co/600x400",
-      tags: ["Kotlin", "API"],
-      demo: "#",
-      code: "https://github.com/otaviozerotwo/pokedex-android",
+      title: "Calculadora Criptoaritmética",
+      description: "Aplicação web para resolução de quebra-cabeças cripto aritméticos por meio de Algoritmos Genéticos",
+      image: imgCriptAritmetica,
+      tags: ["HTML", "CSS", "JavaScript"],
+      demo: "https://calculadora-criptoaritmetica.vercel.app/",
+      code: "https://github.com/otaviozerotwo/calculadora_criptoaritmetica",
+    },
+    {
+      title: "The Legend of Zelda: A* Pathfinding Simulator",
+      description: "Aplicação web interativa utilizando o algoritmo de busca heurística A* (A-Star)",
+      image: imgZelda,
+      tags: ["React.js", "React Router", "CSS", "JavaScript"],
+      demo: "https://legend-of-zelda-a-star-b3kx.vercel.app/",
+      code: "https://github.com/otaviozerotwo/legend_of_zelda_a_star",
     },
   ]
   return (
@@ -47,8 +60,8 @@ export function Project() {
 
       <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
-          <Reveal delay={0.2}>
-            <Card key={index} className="w-80 h-104 flex flex-col overflow-hidden gap-0">
+          <Reveal key={index} delay={0.2}>
+            <Card className="w-80 h-104 flex flex-col overflow-hidden gap-0">
               <img 
                 src={project.image} 
                 alt={project.title}

@@ -5,7 +5,7 @@ import ReactLogo from '../assets/logos/react_logo.png';
 import TsLogo from '../assets/logos/typeScript_logo.png';
 import NodeLogo from '../assets/logos/node_logo.png';
 import DockerLogo from '../assets/logos/docker_logo.png';
-import TypeORMLogo from '../assets/logos/typeORM_logo.png';
+import TailwindLogo from '../assets/logos/tailwindcss_logo.png';
 import { Card, CardContent } from "./ui/card";
 
 export function LogoMarquee() {
@@ -47,8 +47,8 @@ export function LogoMarquee() {
       </Card>
       <Card className="w-24 h-24 flex-shrink-0 mx-2">
         <CardContent className="flex flex-col items-center justify-center h-full">
-          <img src={TypeORMLogo} alt="Logo TypeORM" className="h-10 w-10 object-contain" />
-          <p>TypeORM</p>
+          <img src={TailwindLogo} alt="Logo TypeORM" className="h-10 w-10 object-contain" />
+          <p>Tailwind</p>
         </CardContent>
       </Card>
       <Card className="w-24 h-24 flex-shrink-0 mx-2">
@@ -83,8 +83,8 @@ export function LogoMarquee() {
       </Card>
       <Card className="w-24 h-24 flex-shrink-0 mx-2">
         <CardContent className="flex flex-col items-center justify-center h-full">
-          <img src={TypeORMLogo} alt="Logo TypeORM" className="h-10 w-10 object-contain" />
-          <p>TypeORM</p>
+          <img src={TailwindLogo} alt="Logo TypeORM" className="h-10 w-10 object-contain" />
+          <p>Tailwind</p>
         </CardContent>
       </Card>
     </Marquee>
